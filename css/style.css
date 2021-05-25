@@ -596,6 +596,10 @@ body {
   padding: 80px 20px 80px 20px;
 }
 
+#expandBtn {
+  display: none;
+}
+
 .about_us {
   text-align: justify;
 }
@@ -686,6 +690,26 @@ details summary::marker {
   .accordion_container {
     margin-top: 30px;
   }
+
+  #more {
+    display: none;
+  }
+
+  #expandBtn {
+    display: inline;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(238, 77, 77), rgb(170, 166, 166));
+    outline: none;
+    border: none;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 420px) {
 }
 
 /* Footer Container */

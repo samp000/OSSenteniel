@@ -80,6 +80,24 @@ function vanish() {
   loader.classList.add("disappear");
 }
 
+// Expand btn in about us content
+
+function expand() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("expandBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more...";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
 // accordium(about us)
 
 // Fetch all the details element.

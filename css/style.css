@@ -191,6 +191,12 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  #navbar_logo {
+    font-size: 25px;
+  }
+}
+
 /* slidshow */
 
 .slideshow_container {

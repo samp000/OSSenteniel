@@ -56,3 +56,25 @@
 .hidden {
   display: none !important;
 }
+
+@media screen and (max-width: 400px) {
+  .chat_icon {
+    font-size: 30px;
+    padding: 10px 13px;
+  }
+
+  .fa {
+    font-size: 30px;
+  }
+
+  .chat_box {
+    width: 320px;
+    height: 600px;
+    bottom: 100px;
+    right: 30px;
+  }
+
+  .my-conv-form-wrapper textarea {
+    height: 30px;
+  }
+}

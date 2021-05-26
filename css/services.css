@@ -44,6 +44,7 @@ body {
     width: 90%;
   }
 }
+
 .info_section p {
   margin: 50px;
   text-align: justify;
@@ -60,7 +61,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  transform: translateX(-270px);
+  transform: translateX(-260px);
 }
 
 .social ul li {

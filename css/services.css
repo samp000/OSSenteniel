@@ -125,3 +125,71 @@ body {
   transform: rotate(360deg);
   transition: all 1s;
 }
+
+.want_guard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.getGuard {
+  padding: 10px 30px 10px 30px;
+  font-size: 23px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin: 30px 0 30px 0;
+  letter-spacing: 1.5px;
+  background: linear-gradient(to right, rgb(190, 188, 188), rgb(221, 182, 182));
+}
+
+.getGuard:hover {
+  transform: translateY(-10px);
+  transition: ease 0.5s;
+  box-shadow: 1px 4px 10px rgb(253, 250, 250);
+  border: 1px solid black;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 9;
+}
+
+.form_get_guard_container {
+  background: white;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+  width: 90%;
+  padding: 12px 12px 24px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 10px 15px 10px 15px;
+  border-radius: 10px;
+  resize: vertical;
+  color: white;
+  font-size: 16px;
+
+  background: linear-gradient(to right, rgb(37, 37, 37), rgb(70, 69, 69))
+    no-repeat;
+  outline: none;
+}
+.fa-times-circle {
+  position: absolute;
+  top: -100;
+  right: 0;
+  font-size: 30px;
+}

@@ -137,3 +137,15 @@ function openTab(evt, tbname) {
   document.getElementById(tbname).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Form in services
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+const icon = document.querySelector(".fa-times-circle");
+icon.addEventListener("click", closeForm);
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

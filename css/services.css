@@ -166,6 +166,8 @@ body {
   margin: auto;
   border-radius: 20px;
   padding: 20px;
+  border: 2px solid black;
+  box-shadow: 10px 15px 10px black;
 }
 
 input[type="text"],

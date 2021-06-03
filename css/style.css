@@ -1019,6 +1019,7 @@ label {
 .feedback_container {
   display: none;
   position: fixed;
+
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
@@ -1125,4 +1126,16 @@ label {
 }
 form .submit-rating:hover {
   background-color: #333;
+}
+
+@media screen and (max-width: 460px) {
+  .star-rating {
+    width: 280px;
+  }
+  .star-rating label {
+    font-size: 30px;
+  }
+  .star-rating form .rating-reaction {
+    font-size: 20px;
+  }
 }

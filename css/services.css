@@ -191,8 +191,27 @@ input[type="tel"] {
 }
 .fa-times-circle {
   position: absolute;
-  top: -100;
-  right: 0;
+  top: 10px;
+  right: 5px;
   font-size: 30px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  .form_get_guard_container {
+    width: 300px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"] {
+    width: 90%;
+
+    font-size: 14px;
+    height: 25px;
+  }
+
+  .fa-times-circle {
+    
 }

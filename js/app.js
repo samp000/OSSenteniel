@@ -149,3 +149,25 @@ icon.addEventListener("click", closeForm);
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+// Feedback Section
+
+function openFeedback() {
+  document.getElementById("feed_container").style.display = "block";
+}
+function closefeedForm() {
+  document.getElementById("feed_container").style.display = "none";
+}
+
+const feedbtn = document.querySelector(".feedback_btn");
+feedbtn.addEventListener("click", openFeedback);
+
+const btn = document.querySelector(".submit-rating");
+const thanksmsg = document.querySelector(".thanks-msg");
+const starRating = document.querySelector(".star-input");
+// Success msg show/hide
+btn.onclick = () => {
+  starRating.style.display = "none";
+  thanksmsg.style.display = "table";
+  return false;
+};

@@ -194,4 +194,5 @@ input[type="tel"] {
   top: -100;
   right: 0;
   font-size: 30px;
+  cursor: pointer;
 }

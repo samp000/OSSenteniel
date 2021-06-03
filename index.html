@@ -54,7 +54,7 @@
           </li>
 
           <li class="navbar_item">
-            <a href="#training" class="navbar_links" id="training-page"
+            <a href="#contact" class="navbar_links" id="training-page"
               >Training</a
             >
           </li>
@@ -394,7 +394,7 @@
         </details>
 
         <details>
-          <summary>We Cater To</summary>
+          <summary>We Care To</summary>
           With our reliable Security Services, we serve : Legal Agencies Banks
           Clubs Housing and Co-operative societies Corporate & Business Houses
           Insurance Companies Co-operative firms Multinationals
@@ -469,6 +469,8 @@
             the scope for personal development with a young and thriving
             business that's really going places.
           </p>
+
+          --Mail your CV:  <a href="mailto:sandeshdmarathe333@gmmail.com">OSSentinel@gmail.com</a>
         </div>
 
         <div id="training" class="tabcontent">
@@ -485,6 +487,7 @@
               fire fighting, soft skills, First aid, Body frisking etc.
             </li>
           </ul>
+
         </div>
       </div>
 
@@ -554,6 +557,16 @@
             <h3>Legal</h3>
             <ul>
               <li><a href="./html/terms.html">Terms</a></li>
+     
+        <input
+        type="button"
+        class="feedback_btn"
+        id="feed_btn"
+        name="getGuard"
+        value="Feedback"
+        onclick="openFeedback()"
+      />
+        <li></li>
             </ul>
           </div>
 
@@ -589,8 +602,34 @@
 
       <div class="copy_right_container">
         &#169; 2021 OSSentinel. All Rights Reserved
+      </footer>
       </div>
-    </footer>
+ 
+
+    <div class="feedback_container" id="feed_container">
+      <i class="far fa-times-circle" onclick="closefeedForm()"></i>
+      <div class="star-rating">
+        <div class="thanks-msg">Thanks for your feedback !!!</div>
+        <div class="star-input">
+          <input type="radio" name="rating" id="rating-5" />
+          <label for="rating-5" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-4" />
+          <label for="rating-4" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-3" />
+          <label for="rating-3" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-2" />
+          <label for="rating-2" class="fas fa-star"></label>
+          <input type="radio" name="rating" id="rating-1" />
+          <label for="rating-1" class="fas fa-star"></label>
+
+          <!-- Rating Submit Form -->
+          <form>
+            <span class="rating-reaction"></span>
+            <button type="submit" class="submit-rating">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/app.js"></script>
   </body>

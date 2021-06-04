@@ -174,7 +174,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
-.address {
+#address {
   width: 90%;
   padding: 12px 12px 24px 12px;
   border: 1px solid #ccc;
@@ -190,8 +190,7 @@ input[type="tel"],
     no-repeat;
   outline: none;
 }
-.address {
-}
+
 .fa-times-circle {
   position: absolute;
   top: 10px;

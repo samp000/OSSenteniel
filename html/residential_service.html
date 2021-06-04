@@ -134,11 +134,11 @@
       <i class="far fa-times-circle" onclick="closeForm()"></i>
       <form
         action="POST"
-        name="getguardForm"
+        name="getGuardForm"
         data-netlify="true"
         class="form_get_guard_container"
       >
-        <input type="hidden" name="getguardForm" value="received" />
+        <input type="hidden" name="getGuardForm" value="received" />
         <input type="hidden" name="guard Type" value="Residential Guard" />
 
         <input
@@ -153,6 +153,12 @@
           placeholder="Enter Phone Number"
           name="Phone_No"
           required
+        />
+        <input
+          type="text"
+          name="Address"
+          id="address"
+          placeholder="Enter your address"
         />
         <input
           type="number"

@@ -173,7 +173,8 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="tel"] {
+input[type="tel"],
+.address {
   width: 90%;
   padding: 12px 12px 24px 12px;
   border: 1px solid #ccc;
@@ -181,13 +182,15 @@ input[type="tel"] {
   box-sizing: border-box;
   margin: 10px 15px 10px 15px;
   border-radius: 10px;
-  resize: vertical;
+  resize: none;
   color: white;
   font-size: 16px;
 
   background: linear-gradient(to right, rgb(37, 37, 37), rgb(70, 69, 69))
     no-repeat;
   outline: none;
+}
+.address {
 }
 .fa-times-circle {
   position: absolute;

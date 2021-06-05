@@ -1,630 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OSSentinel</title>
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSSentinel</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/custome.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet" />
 
-    <!-- chatbot  -->
-    <link rel="stylesheet" type="text/css" href="./css/jquery.convform.css" />
-    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.convform.js"></script>
-    <script type="text/javascript" src="./js/custom.js"></script>
-  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/custome.css" />
 
-  <body>
-    <!-- navigation Bar -->
-    <nav class="navbar" id="navbar">
-      <div class="navbar_container">
-        <a href="index.html" id="navbar_logo">OSSentinel</a>
+  <!-- chatbot  -->
+  <link rel="stylesheet" type="text/css" href="./css/jquery.convform.css" />
+  <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.convform.js"></script>
+  <script type="text/javascript" src="./js/custom.js"></script>
+</head>
 
-        <div class="navbar_toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+<body>
+  <!-- navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar_container">
+      <a href="index.html" id="navbar_logo">OSSentinel</a>
 
-        <ul class="navbar_menu">
-          <li class="navbar_item">
-            <a href="index.html" class="navbar_links" id="home-page">Home</a>
-          </li>
-
-          <li class="navbar_item">
-            <a href="#about" class="navbar_links" id="about-page">About Us</a>
-          </li>
-
-          <li class="navbar_item">
-            <a href="#contact" class="navbar_links" id="training-page"
-              >Training</a
-            >
-          </li>
-
-          <li class="navbar_item">
-            <a href="#services" class="navbar_links" id="services-page"
-              >Services</a
-            >
-          </li>
-
-          <li class="navbar_item">
-            <a href="#contact" class="navbar_links" id="contact-page"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </nav>
 
-    <!-- ChatBot start-->
-    <div class="chat_icon">
-      <i class="fa fa-comment" aria-hidden="true"></i>
+      <ul class="navbar_menu">
+        <li class="navbar_item">
+          <a href="index.html" class="navbar_links" id="home-page">Home</a>
+        </li>
+
+        <li class="navbar_item">
+          <a href="#about" class="navbar_links" id="about-page">About Us</a>
+        </li>
+
+        <li class="navbar_item">
+          <a href="#contact" class="navbar_links" id="training-page">Training</a>
+        </li>
+
+        <li class="navbar_item">
+          <a href="#services" class="navbar_links" id="services-page">Services</a>
+        </li>
+
+        <li class="navbar_item">
+          <a href="#contact" class="navbar_links" id="contact-page">Contact Us</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="chat_box">
-      <div class="my-conv-form-wrapper">
-        <form action="" method="GET" class="hidden">
-          <select
-            data-conv-question="Hello! How can I help you"
-            name="category"
-          >
-            <option value="typeGuard">Want a guard ?</option>
-            <option value="train_Guard">Want training for guard?</option>
-          </select>
+  <!-- ChatBot start-->
+  <div class="chat_icon">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
 
-          <div data-conv-fork="category">
-            <div data-conv-case="typeGuard">
-              <input
-                type="text"
-                data-conv-question="You can find guard.. in service section as your need."
-                data-no-answer="true"
-              />
-            </div>
+  <div class="chat_box">
+    <div class="my-conv-form-wrapper">
+      <form action="" method="GET" class="hidden">
+        <select data-conv-question="Hello! How can I help you" name="category">
+          <option value="typeGuard">Want a guard ?</option>
+          <option value="train_Guard">Want training for guard?</option>
+        </select>
 
-            <div data-conv-case="train_Guard" data-conv-fork="first-question2">
-              <input
-                type="text"
-                data-conv-question="You can get more about training in training section."
-                data-no-answer="true"
-              />
-            </div>
+        <div data-conv-fork="category">
+          <div data-conv-case="typeGuard">
+            <input type="text" data-conv-question="You can find guard.. in service section as your need."
+              data-no-answer="true" />
           </div>
 
-          <input
-            type="text"
-            data-conv-question="Please give us some your info as we will update you..."
-            data-no-answer="true"
-          />
+          <div data-conv-case="train_Guard" data-conv-fork="first-question2">
+            <input type="text" data-conv-question="You can get more about training in training section."
+              data-no-answer="true" />
+          </div>
+        </div>
 
-          <input
-            type="text"
-            name="name"
-            data-conv-question="Please, Enter your name"
-          />
+        <input type="text" data-conv-question="Please give us some your info as we will update you..."
+          data-no-answer="true" />
 
-          <input
-            type="text"
-            data-conv-question="Hi {name}, <br> It's a pleasure to meet you."
-            data-no-answer="true"
-          />
+        <input type="text" name="name" data-conv-question="Please, Enter your name" />
 
-          <input
-            data-conv-question="Enter your e-mail"
-            data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-            type="email"
-            name="email"
-            required
-            placeholder="What's your e-mail?"
-          />
+        <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true" />
 
-          <select data-conv-question="Is this Helpful ?">
-            <option value="Yes">Yes</option>
-            <option value="Yes">No</option>
-          </select>
+        <input data-conv-question="Enter your e-mail"
+          data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          type="email" name="email" required placeholder="What's your e-mail?" />
+
+        <select data-conv-question="Is this Helpful ?">
+          <option value="Yes">Yes</option>
+          <option value="Yes">No</option>
+        </select>
+      </form>
+    </div>
+  </div>
+
+  <!-- chatbot end -->
+
+  <!-- Slideshow container -->
+  <div class="slideshow_container">
+    <div class="slide_img">
+      <div class="mySlides fade">
+        <img src="./images/img1.jpg" class="bann-img" />
+        <h2 class="img_text fade">A Power That Saves You.</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/img2.jpg" class="bann-img" />
+        <h2 class="img_text fade">Our Commitment is Keeping you Safe.</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/img3.jpg" class="bann-img" />
+        <h2 class="img_text fade">
+          Professionalism and experience are our keys.
+        </h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/img4.jpg" class="bann-img" />
+        <h2 class="img_text fade">Your Security is Our Priority.</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featurea -->
+  <div class="features_container">
+    <div class="heading_features">
+      <h1>Features</h1>
+      <p>
+        OSSentinel Services providing both physical safety as well as peace of
+        mind to its clients. "Quality is our Aim"
+      </p>
+    </div>
+
+    <div class="features_list">
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/businessman.svg" class="logo-img" width="50px" />
+        </div>
+
+        <div class="feature_info">
+          <h2>Professionalism</h2>
+          <p>
+            OSSentinel Services is an organization functioning on the lines of
+            professionalism.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/biceps.svg" class="logo-img" width="50px" />
+        </div>
+
+        <div class="feature_info">
+          <h2>Strong Security Person</h2>
+          <p>
+            Security personnel provided by us are physically capable and
+            mentally sharp to detect any change in normal activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/security-guard.svg" class="logo-img" width="50px" />
+        </div>
+
+        <div class="feature_info">
+          <h2>Female Security</h2>
+          <p>Female security aims to protect especially females.</p>
+        </div>
+      </div>
+
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/taekwondo-kick.svg" class="logo-img" width="50px" />
+        </div>
+
+        <div class="feature_info">
+          <h2>Trained Security Guards</h2>
+          <p>
+            Security personnel provided by us are physically capable and
+            mentally sharp to detect any change in normal activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/gun.svg" class="logo-img" width="50px" />
+        </div>
+        <div class="feature_info">
+          <h2>Armed Security</h2>
+          <p>Our security guards are available in armed security services.</p>
+        </div>
+      </div>
+
+      <div class="feature_card">
+        <div class="feature_logo" id="logo">
+          <img src="./logos/24-hours.svg" class="logo-img" width="50px" />
+        </div>
+        <div class="feature_info">
+          <h2>Available 24/7</h2>
+          <p>
+            Our security guards are available 24/7 you can get service any
+            time
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="services_container" id="services">
+    <div class="heading_services">
+      <h1>Our Security Services</h1>
+      <p>
+        We render cost-effective and dependable Security Services that include
+        Bouncer Services, Security Supervisor Services and Security Guard
+        Services.
+      </p>
+    </div>
+    <div class="services_list">
+      <div class="service_card">
+        <h3>Armed Security</h3>
+        <p>We provide armed security services</p>
+        <a href="html/armed_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Event Security</h3>
+        <p>We provide special security squad for mega-events.</p>
+        <a href="html/event_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Security Officer</h3>
+        <p>We Providing Experienced Security Guards.</p>
+        <a href="html/securityofficer_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Lady Security Guard</h3>
+        <p>Trained and devoted lady security officers.</p>
+        <a href="html/ledysecurity_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Bouncer Security</h3>
+        <p>Providing strong and fit bouncers for special venues.</p>
+        <a href="html/bouncer_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Residential Security</h3>
+        <p>We Providing Security for Residential areas.</p>
+        <a href="html/residential_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Security Supervisor</h3>
+        <p>
+          We Are Providing Affordable Security Supervisor Services in Pune.
+        </p>
+        <a href="html/supervisor_service.html"><i>Read more...</i></a>
+      </div>
+
+      <div class="service_card">
+        <h3>Security services for Hotels</h3>
+        <p>We are Providing Security services for Hotels.</p>
+        <a href="html/hotel_service.html"><i>Read more...</i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- loader -->
+  <div class="loader_container">
+    <div class="loader">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <!-- About Us  -->
+  <div class="about_us_container" id="about">
+    <div class="about_us">
+      <h1>About us</h1>
+      <p>
+        OSSentinel is located at Vadgaon BK. , Pune (Maharashtra). We are
+        headed by a team of highly qualified mentors. Their valuable service
+        experience has always guided us in understanding the needs of the
+        clients successfully and meeting the specific security requirements
+        efficiently. highly qualified mentors. Their valuable service
+        experience has always guided us in understanding the needs of the
+        clients successfully and meeting the specific security requirements
+        efficiently.<span id="dots">...</span>
+      </p>
+      <br />
+      <span id="more">
+        <p>
+          Based at Pune, OSSentinel is one of the most trustworthy Service
+          Providers engaged in offering reliable Security Services. We render
+          cost-effective and dependable Security Services that include Bouncer
+          Services, Security Supervisor Services and Security Guard Services.
+        </p>
+        <br />
+
+        <p>
+          We provide a team of well-trained guarding force, dedicated bouncers
+          and disciplined security personnel who can work under stressful
+          situations and can be completely relied upon. Owing to the
+          customized availability and reasonable charges of our Security
+          Services many banks, consulates, shipping companies, security
+          agencies, departmental stores, hospitals, airlines, jewelry
+          manufacturers, clubs, hotels, government establishments, etc., have
+          bestowed their trust upon us.
+        </p>
+      </span>
+
+      <button onclick="expand()" id="expandBtn">Read more ...</button>
+    </div>
+
+    <div class="accordion_container">
+      <details open>
+        <summary>Our Resources</summary>
+        At OSSentinel, our team of guards and security guards represents us.
+        Our standards and pride is reflected by their personality and
+        performance. So, to make sure that high standards in quality and
+        reliability are achieved, we select the security personnel after
+        carefully screening aspects like interest, courtesy, motivation as
+        well as integrity.
+      </details>
+
+      <details>
+        <summary>We Care To</summary>
+        With our reliable Security Services, we serve : Legal Agencies Banks
+        Clubs Housing and Co-operative societies Corporate & Business Houses
+        Insurance Companies Co-operative firms Multinationals
+      </details>
+
+      <details>
+        <summary>Why Choose Us</summary>
+        <h3>
+          The prominent factors that make us a preferred choice of the clients
+          are
+        </h3>
+        <ul>
+          <li>High level & customized services</li>
+          <li>Trained personnel</li>
+          <li>Complete customer satisfaction</li>
+          <li>
+            Provision of additional security personnel with ceremonial uniform
+          </li>
+          <li>Timely execution</li>
+          <li>Reasonable charges.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <!-- Contact Us -->
+  <div class="Contactus_container" id="contact">
+    <!-- Tab links -->
+
+    <div class="tab_container">
+      <div class="tab">
+        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'contacttb')">
+          CONTACT
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'careerpof')">
+          CAREER PROFILE
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'training')">
+          TRAINING
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="contacttb" class="tabcontent">
+        <h2>OSSentinel</h2>
+        <i class="fas fa-map-marker-alt"></i>
+        Address: Vadgaon BK,Sinhagad Road<br />
+        Pune-411041,Maharastra
+        <br /><br />
+        <i class="fas fa-phone-volume"></i>
+        Call Us: +91-8080152020
+        <br /><br />
+        <i class="fas fa-envelope"></i>
+        Email:OSSentinel@gmail.com
+      </div>
+
+      <div id="careerpof" class="tabcontent">
+        <h2>SECURITY GUARD</h2>
+        Qualification :
+        <ul>
+          <li>10-12 passed</li>
+          <li>1 Year Experience</li>
+        </ul>
+        <p>
+          A young dynamic organization with the ability to offer you the
+          growth you look for. If you are keen, if you are ambitious, with a
+          can-do attitude and you are looking for a career that will give you
+          the scope for personal development with a young and thriving
+          business that's really going places.
+        </p>
+
+        --Mail your CV: <a href="mailto:sandeshdmarathe333@gmmail.com">OSSentinel@gmail.com</a>
+      </div>
+
+      <div id="training" class="tabcontent">
+        <h2>TRAINING</h2>
+        <ul>
+          <li>
+            A Quality security training program can improve organizational
+            performance and overall productivity as well as reduce potential
+            loss of life.
+          </li>
+          <li>We conduct training for our security personnel.</li>
+          <li>
+            In this training we train them about their Job responsibilities,
+            fire fighting, soft skills, First aid, Body frisking etc.
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="contact_form">
+      <div class="contact_form_container">
+        <form action="POST" name="contactForm" data-netlify="true">
+          <input type="hidden" name="contactForm" value="received" />
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="full name" placeholder="Your name.." />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email.." />
+
+          <label for="subject">Subject</label>
+         <textarea name="sunject" id="subject" cols="20" rows="3" placeholder="Enter subject"></textarea>
+
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </div>
+  </div>
 
-    <!-- chatbot end -->
-
-    <!-- Slideshow container -->
-    <div class="slideshow_container">
-      <div class="slide_img">
-        <div class="mySlides fade">
-          <img src="./images/img1.jpg" class="bann-img" />
-          <h2 class="img_text fade">A Power That Saves You.</h2>
+  <!-- Footer -->
+  <footer class="footer_container">
+    <div class="foot_main_container">
+      <div class="logo_container">
+        <div class="logo">
+          <a href="index.html" class="footer_logo" id="navbar_logo">OSSentinel</a>
         </div>
-
-        <div class="mySlides fade">
-          <img src="./images/img2.jpg" class="bann-img" />
-          <h2 class="img_text fade">Our Commitment is Keeping you Safe.</h2>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="./images/img3.jpg" class="bann-img" />
-          <h2 class="img_text fade">
-            Professionalism and experience are our keys.
-          </h2>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="./images/img4.jpg" class="bann-img" />
-          <h2 class="img_text fade">Your Security is Our Priority.</h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featurea -->
-    <div class="features_container">
-      <div class="heading_features">
-        <h1>Features</h1>
-        <p>
-          OSSentinel Services providing both physical safety as well as peace of
-          mind to its clients. "Quality is our Aim"
-        </p>
+        <h3>safety is here</h3>
       </div>
 
-      <div class="features_list">
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img src="./logos/businessman.svg" class="logo-img" width="50px" />
-          </div>
-
-          <div class="feature_info">
-            <h2>Professionalism</h2>
-            <p>
-              OSSentinel Services is an organization functioning on the lines of
-              professionalism.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img src="./logos/biceps.svg" class="logo-img" width="50px" />
-          </div>
-
-          <div class="feature_info">
-            <h2>Strong Security Person</h2>
-            <p>
-              Security personnel provided by us are physically capable and
-              mentally sharp to detect any change in normal activities.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img
-              src="./logos/security-guard.svg"
-              class="logo-img"
-              width="50px"
-            />
-          </div>
-
-          <div class="feature_info">
-            <h2>Female Security</h2>
-            <p>Female security aims to protect especially females.</p>
-          </div>
-        </div>
-
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img
-              src="./logos/taekwondo-kick.svg"
-              class="logo-img"
-              width="50px"
-            />
-          </div>
-
-          <div class="feature_info">
-            <h2>Trained Security Guards</h2>
-            <p>
-              Security personnel provided by us are physically capable and
-              mentally sharp to detect any change in normal activities.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img src="./logos/gun.svg" class="logo-img" width="50px" />
-          </div>
-          <div class="feature_info">
-            <h2>Armed Security</h2>
-            <p>Our security guards are available in armed security services.</p>
-          </div>
-        </div>
-
-        <div class="feature_card">
-          <div class="feature_logo" id="logo">
-            <img src="./logos/24-hours.svg" class="logo-img" width="50px" />
-          </div>
-          <div class="feature_info">
-            <h2>Available 24/7</h2>
-            <p>
-              Our security guards are available 24/7 you can get service any
-              time
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services -->
-    <div class="services_container" id="services">
-      <div class="heading_services">
-        <h1>Our Security Services</h1>
-        <p>
-          We render cost-effective and dependable Security Services that include
-          Bouncer Services, Security Supervisor Services and Security Guard
-          Services.
-        </p>
-      </div>
-      <div class="services_list">
-        <div class="service_card">
-          <h3>Armed Security</h3>
-          <p>We provide armed security services</p>
-          <a href="html/armed_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Event Security</h3>
-          <p>We provide special security squad for mega-events.</p>
-          <a href="html/event_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Security Officer</h3>
-          <p>We Providing Experienced Security Guards.</p>
-          <a href="html/securityofficer_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Lady Security Guard</h3>
-          <p>Trained and devoted lady security officers.</p>
-          <a href="html/ledysecurity_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Bouncer Security</h3>
-          <p>Providing strong and fit bouncers for special venues.</p>
-          <a href="html/bouncer_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Residential Security</h3>
-          <p>We Providing Security for Residential areas.</p>
-          <a href="html/residential_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Security Supervisor</h3>
-          <p>
-            We Are Providing Affordable Security Supervisor Services in Pune.
-          </p>
-          <a href="html/supervisor_service.html"><i>Read more...</i></a>
-        </div>
-
-        <div class="service_card">
-          <h3>Security services for Hotels</h3>
-          <p>We are Providing Security services for Hotels.</p>
-          <a href="html/hotel_service.html"><i>Read more...</i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- loader -->
-    <div class="loader_container">
-      <div class="loader">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div>
-    </div>
-
-    <!-- About Us  -->
-    <div class="about_us_container" id="about">
-      <div class="about_us">
-        <h1>About us</h1>
-        <p>
-          OSSentinel is located at Vadgaon BK. , Pune (Maharashtra). We are
-          headed by a team of highly qualified mentors. Their valuable service
-          experience has always guided us in understanding the needs of the
-          clients successfully and meeting the specific security requirements
-          efficiently. highly qualified mentors. Their valuable service
-          experience has always guided us in understanding the needs of the
-          clients successfully and meeting the specific security requirements
-          efficiently.<span id="dots">...</span>
-        </p>
-        <br />
-        <span id="more">
-          <p>
-            Based at Pune, OSSentinel is one of the most trustworthy Service
-            Providers engaged in offering reliable Security Services. We render
-            cost-effective and dependable Security Services that include Bouncer
-            Services, Security Supervisor Services and Security Guard Services.
-          </p>
-          <br />
-
-          <p>
-            We provide a team of well-trained guarding force, dedicated bouncers
-            and disciplined security personnel who can work under stressful
-            situations and can be completely relied upon. Owing to the
-            customized availability and reasonable charges of our Security
-            Services many banks, consulates, shipping companies, security
-            agencies, departmental stores, hospitals, airlines, jewelry
-            manufacturers, clubs, hotels, government establishments, etc., have
-            bestowed their trust upon us.
-          </p>
-        </span>
-
-        <button onclick="expand()" id="expandBtn">Read more ...</button>
-      </div>
-
-      <div class="accordion_container">
-        <details open>
-          <summary>Our Resources</summary>
-          At OSSentinel, our team of guards and security guards represents us.
-          Our standards and pride is reflected by their personality and
-          performance. So, to make sure that high standards in quality and
-          reliability are achieved, we select the security personnel after
-          carefully screening aspects like interest, courtesy, motivation as
-          well as integrity.
-        </details>
-
-        <details>
-          <summary>We Care To</summary>
-          With our reliable Security Services, we serve : Legal Agencies Banks
-          Clubs Housing and Co-operative societies Corporate & Business Houses
-          Insurance Companies Co-operative firms Multinationals
-        </details>
-
-        <details>
-          <summary>Why Choose Us</summary>
-          <h3>
-            The prominent factors that make us a preferred choice of the clients
-            are
-          </h3>
+      <div class="footer_info_container">
+        <div class="explore">
+          <h3>Explore</h3>
           <ul>
-            <li>High level & customized services</li>
-            <li>Trained personnel</li>
-            <li>Complete customer satisfaction</li>
-            <li>
-              Provision of additional security personnel with ceremonial uniform
-            </li>
-            <li>Timely execution</li>
-            <li>Reasonable charges.</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#Capabilities">Capabilities</a></li>
           </ul>
-        </details>
-      </div>
-    </div>
-
-    <!-- Contact Us -->
-    <div class="Contactus_container" id="contact">
-      <!-- Tab links -->
-
-      <div class="tab_container">
-        <div class="tab">
-          <button
-            class="tablinks"
-            id="defaultOpen"
-            onclick="openTab(event, 'contacttb')"
-          >
-            CONTACT
-          </button>
-          <button class="tablinks" onclick="openTab(event, 'careerpof')">
-            CAREER PROFILE
-          </button>
-          <button class="tablinks" onclick="openTab(event, 'training')">
-            TRAINING
-          </button>
         </div>
-
-        <!-- Tab content -->
-        <div id="contacttb" class="tabcontent">
-          <h2>OSSentinel</h2>
-          <i class="fas fa-map-marker-alt"></i>
-          Address: Vadgaon BK,Sinhagad Road<br />
-          Pune-411041,Maharastra
-          <br /><br />
-          <i class="fas fa-phone-volume"></i>
-          Call Us: +91-8080152020
-          <br /><br />
-          <i class="fas fa-envelope"></i>
-          Email:OSSentinel@gmail.com
+        <div class="visit">
+          <h3>Visit</h3>
+          India,Maharastra <br />
+          Pune 41 vadgaon bk<br />
+          Sinhagad Road
         </div>
-
-        <div id="careerpof" class="tabcontent">
-          <h2>SECURITY GUARD</h2>
-          Qualification :
+        <div class="Legal">
+          <h3>Legal</h3>
           <ul>
-            <li>10-12 passed</li>
-            <li>1 Year Experience</li>
-          </ul>
-          <p>
-            A young dynamic organization with the ability to offer you the
-            growth you look for. If you are keen, if you are ambitious, with a
-            can-do attitude and you are looking for a career that will give you
-            the scope for personal development with a young and thriving
-            business that's really going places.
-          </p>
+            <li><a href="./html/terms.html">Terms</a></li>
 
-          --Mail your CV:  <a href="mailto:sandeshdmarathe333@gmmail.com">OSSentinel@gmail.com</a>
+            <input type="button" class="feedback_btn" id="feed_btn" name="getGuard" value="Feedback"
+              onclick="openFeedback()" />
+            <li></li>
+          </ul>
         </div>
 
-        <div id="training" class="tabcontent">
-          <h2>TRAINING</h2>
+        <div class="footer_icons">
           <ul>
             <li>
-              A Quality security training program can improve organizational
-              performance and overall productivity as well as reduce potential
-              loss of life.
+              <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
             </li>
-            <li>We conduct training for our security personnel.</li>
+
             <li>
-              In this training we train them about their Job responsibilities,
-              fire fighting, soft skills, First aid, Body frisking etc.
+              <a href="https://api.whatsapp.com/send?phone=+918010785396" target="_blank"><i
+                  class="fab fa-whatsapp"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
             </li>
           </ul>
-
-        </div>
-      </div>
-
-      <div class="contact_form">
-        <div class="contact_form_container">
-          <form action="POST" name="contactForm" data-netlify="true">
-            <input type="hidden" name="contactForm" value="received" />
-            <label for="fname">Full Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="full name"
-              placeholder="Your name.."
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter Your Email.."
-            />
-
-            <label for="subject">Subject</label>
-            <input type="submit" value="Submit" />
-          </form>
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer_container">
-      <div class="foot_main_container">
-        <div class="logo_container">
-          <div class="logo">
-            <a href="index.html" class="footer_logo" id="navbar_logo"
-              >OSSentinel</a
-            >
-          </div>
-          <h3>safety is here</h3>
-        </div>
+    <div class="copy_right_container">
+      &#169; 2021 OSSentinel. All Rights Reserved
+  </footer>
+  </div>
 
-        <div class="footer_info_container">
-          <div class="explore">
-            <h3>Explore</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Careers</a></li>
-              <li><a href="#Capabilities">Capabilities</a></li>
-            </ul>
-          </div>
-          <div class="visit">
-            <h3>Visit</h3>
-            India,Maharastra <br />
-            Pune 41 vadgaon bk<br />
-            Sinhagad Road
-          </div>
-          <div class="Legal">
-            <h3>Legal</h3>
-            <ul>
-              <li><a href="./html/terms.html">Terms</a></li>
-     
-        <input
-        type="button"
-        class="feedback_btn"
-        id="feed_btn"
-        name="getGuard"
-        value="Feedback"
-        onclick="openFeedback()"
-      />
-        <li></li>
-            </ul>
-          </div>
 
-          <div class="footer_icons">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </li>
+  <div class="feedback_container" id="feed_container">
+    <i class="far fa-times-circle" onclick="closefeedForm()"></i>
+    <div class="star-rating">
+      <div class="thanks-msg">Thanks for your feedback !!!</div>
+      <div class="star-input">
+        <input type="radio" name="rating" id="rating-5" />
+        <label for="rating-5" class="fas fa-star"></label>
+        <input type="radio" name="rating" id="rating-4" />
+        <label for="rating-4" class="fas fa-star"></label>
+        <input type="radio" name="rating" id="rating-3" />
+        <label for="rating-3" class="fas fa-star"></label>
+        <input type="radio" name="rating" id="rating-2" />
+        <label for="rating-2" class="fas fa-star"></label>
+        <input type="radio" name="rating" id="rating-1" />
+        <label for="rating-1" class="fas fa-star"></label>
 
-              <li>
-                <a
-            href="https://api.whatsapp.com/send?phone=+918010785396"
-            target="_blank"><i class="fab fa-whatsapp"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://www.instagram.com"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-
-              <li>
-                <a href="https://www.twitter.com"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="copy_right_container">
-        &#169; 2021 OSSentinel. All Rights Reserved
-      </footer>
-      </div>
- 
-
-    <div class="feedback_container" id="feed_container">
-      <i class="far fa-times-circle" onclick="closefeedForm()"></i>
-      <div class="star-rating">
-        <div class="thanks-msg">Thanks for your feedback !!!</div>
-        <div class="star-input">
-          <input type="radio" name="rating" id="rating-5" />
-          <label for="rating-5" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-4" />
-          <label for="rating-4" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-3" />
-          <label for="rating-3" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-2" />
-          <label for="rating-2" class="fas fa-star"></label>
-          <input type="radio" name="rating" id="rating-1" />
-          <label for="rating-1" class="fas fa-star"></label>
-
-          <!-- Rating Submit Form -->
-          <form>
-            <span class="rating-reaction"></span>
-            <button type="submit" class="submit-rating">Submit</button>
-          </form>
-        </div>
+        <!-- Rating Submit Form -->
+        <form>
+          <span class="rating-reaction"></span>
+          <button type="submit" class="submit-rating">Submit</button>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script src="./js/app.js"></script>
-  </body>
+  <script src="./js/app.js"></script>
+</body>
+
 </html>

@@ -836,6 +836,52 @@ label {
   padding: 20px;
 }
 
+.thankyou_container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 9;
+  border-radius: 15px;
+  padding: 50px;
+  background: linear-gradient(to right, rgb(82, 80, 80), rgb(124, 74, 74));
+  font-size: 20px;
+  color: rgb(13, 13, 14);
+  text-shadow: 0 0 2px white;
+}
+
+.thankyou_container .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thankyou_container button {
+  padding: 10px;
+  margin: 50px auto 0 auto;
+  background: linear-gradient(to right, rgb(231, 68, 68), rgb(102, 74, 223));
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  width: 50%;
+  border-radius: 25px;
+}
+.thankyou_container button:hover {
+  box-shadow: 2px 2px 15px black;
+}
+
+@media screen and (max-width: 420px) {
+  .thankyou_container {
+    width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 5px white, inset 5px 5px 10px black;
+    letter-spacing: 1.5px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .Contactus_container {
     width: 100%;

@@ -134,46 +134,65 @@
       <i class="far fa-times-circle" onclick="closeForm()"></i>
       <form
         action="POST"
+        class="form_get_guard_container"
+        id="form_get_guard_container"
         name="getGuardForm"
         data-netlify="true"
-        class="form_get_guard_container"
       >
-        <input type="hidden" name="getGuardForm" value="received" />
-        <input
-          type="hidden"
-          name="guard Type"
-          value="Supervisor service Guard"
-        />
+        <input type="hidden" name="guard Type" value="supervisor_service" />
 
         <input
           type="text"
           placeholder="Enter Full Name"
           name="full Name"
+          class="cust_name"
           required
         />
-        <input type="email" placeholder="Enter Email" name="email" required />
+        <input
+          type="email"
+          placeholder="Enter Email"
+          class="cust_email"
+          name="email"
+          required
+        />
         <input
           type="tel"
           placeholder="Enter Phone Number"
           name="Phone_No"
+          class="cust_phno"
           required
         />
         <input
           type="text"
           name="Address"
           id="address"
+          class="cust_Addr"
           placeholder="Enter your address"
         />
         <input
           type="number"
           placeholder="Enter No of Gurds Require"
           name="No_Of_Guards"
+          class="cust_noOfguards"
           required
         />
-        <input type="submit" id="get_guard_btn" value="Submit" />
+        <input type="submit" value="Submit" onclick="displayGetGuardThanku()" />
       </form>
     </div>
 
+    <div class="thankyou_container" id="thankyou_container">
+      <div class="message">
+        <h3>Your form is submitted</h3>
+        <button onclick="disableGetGuardThanku()">Ok</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/service.js"></script>
+
+    <script>
+      let gtype = "Security Superviser";
+    </script>
   </body>
 </html>

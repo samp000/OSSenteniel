@@ -143,11 +143,21 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
+function displayContactThanku() {
+  document.getElementById("thankyou_container").style.display = "block";
+}
+
+function disableContactThanku() {
+  document.getElementById("thankyou_container").style.display = "none";
+  document.getElementById("Form-contact").reset();
+}
+
 const icon = document.querySelector(".fa-times-circle");
 icon.addEventListener("click", closeForm);
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+  document.getElementById("thankyou_container").style.display = "none";
 }
 
 // Feedback Section
@@ -155,6 +165,7 @@ function closeForm() {
 function openFeedback() {
   document.getElementById("feed_container").style.display = "block";
 }
+
 function closefeedForm() {
   document.getElementById("feed_container").style.display = "none";
 }
@@ -171,3 +182,44 @@ btn.onclick = () => {
   thanksmsg.style.display = "table";
   return false;
 };
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyAYfNIpbpc6zUsxitPcQxLDgw6dHfJw0UM",
+  authDomain: "ossentinel.firebaseapp.com",
+  projectId: "ossentinel",
+  storageBucket: "ossentinel.appspot.com",
+  messagingSenderId: "227923727208",
+  appId: "1:227923727208:web:3e32aa077dc46b041e3cdd",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//Reference contactinfo collection
+let contactInfo = firebase.database().ref("ContactInfo");
+
+document.querySelector(".Form-contact").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  //get input values
+
+  let name = document.querySelector(".fullname").value;
+  let email = document.querySelector(".email").value;
+  let subject = document.querySelector(".subject").value;
+
+  saveContactInfo(name, email, subject);
+}
+
+// Save infos to firebase
+
+function saveContactInfo(name, email, subject) {
+  let newContactInfo = contactInfo.push();
+
+  newContactInfo.set({
+    Name: name,
+    Email: email,
+    Message: subject,
+  });
+}
